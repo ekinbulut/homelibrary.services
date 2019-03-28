@@ -20,7 +20,7 @@
 
     <ItemGroup>
       <Reference Include="Library.Common.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\homelibrary.dotnet\common\Library.Common.Contracts\bin\Debug\netcoreapp2.2\Library.Common.Contracts.dll</HintPath>
+        <HintPath>refs\Library.Common.Contracts.dll</HintPath>
       </Reference>
     </ItemGroup>
 
