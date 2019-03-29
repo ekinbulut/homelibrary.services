@@ -2,7 +2,7 @@
 using System.IO;
 using System.Reflection;
 using GreenPipes;
-using HomeLibrary.Service.Consumers;
+using Library.Common.Contracts.Events.BookEvents;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,6 +27,7 @@ namespace HomeLibrary.Service
             AddLogging(serviceCollection);
             AddConfigurationConstants(serviceCollection, configuration);
             AddMassTransit(serviceCollection, massTransitConfigConstants);
+            AddServiceControl(serviceCollection);
             
             ServiceProvider buildServiceProvider = serviceCollection.BuildServiceProvider();
             HostFactory.Run(cfg =>
