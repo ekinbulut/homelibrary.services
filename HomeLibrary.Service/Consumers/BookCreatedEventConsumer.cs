@@ -8,7 +8,7 @@ namespace Library.Common.Contracts.Events.BookEvents
     {
         public Task Consume(ConsumeContext<BookCreated> context)
         {
-            //TODO : fill database            
+            //TODO : fill database    
             return Task.CompletedTask;
         }
     }
